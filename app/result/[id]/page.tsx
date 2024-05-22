@@ -1,19 +1,20 @@
 import { Share } from '@/components/Share/Share';
+import { getPrefixAsset } from '@/lib/constant';
 import styles from '@/styles/result.module.scss';
 import { Metadata } from 'next';
 
 const config: Record<string, Metadata | any> = {
   doglover: {
     description: 'You are the dog lover',
-    imgSrc: '/dog-result.jpeg',
+    imgSrc: getPrefixAsset('/dog-result.jpeg'),
   },
   catlover: {
     description: 'You are the cat lover',
-    imgSrc: '/cat-result.jpeg',
+    imgSrc: getPrefixAsset('/cat-result.jpeg'),
   },
   same: {
     description: 'You are love all',
-    imgSrc: '/dog-cat-result.jpeg',
+    imgSrc: getPrefixAsset('/dog-cat-result.jpeg'),
   },
 };
 

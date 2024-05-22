@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import ImageNode from '../ImageNode/ImageNode';
 import styles from './ImageChoose.module.scss';
+import { getPrefixAsset } from '@/lib/constant';
 
 export interface IImage {
   id: string;
@@ -15,19 +16,19 @@ export interface IImage {
 const images: IImage[] = [
   {
     id: '1',
-    src: '/dog.jpeg',
+    src: getPrefixAsset('/dog.jpeg'),
     alt: 'Image 1',
     children: [
       {
         id: '5',
-        src: '/dog2.jpeg',
+        src: getPrefixAsset('/dog2.jpeg'),
         alt: 'Image 1-1',
         result: 'doglover',
         children: [],
       },
       {
         id: '6',
-        src: '/cat3.jpeg',
+        src: getPrefixAsset('/cat3.jpeg'),
         alt: 'Image 1-2',
         result: 'same',
         children: [],
@@ -36,19 +37,19 @@ const images: IImage[] = [
   },
   {
     id: '2',
-    src: '/cat2.jpeg',
+    src: getPrefixAsset('/cat2.jpeg'),
     alt: 'cat',
     children: [
       {
         id: '5',
-        src: '/dog.jpeg',
+        src: getPrefixAsset('/dog.jpeg'),
         alt: 'Image 1-1',
         result: 'same',
         children: [],
       },
       {
         id: '6',
-        src: '/cat3.jpeg',
+        src: getPrefixAsset('/cat3.jpeg'),
         alt: 'Image 1-2',
         result: 'catlover',
         children: [],
@@ -91,8 +92,8 @@ export const ImageChooser = () => {
         <p className={styles.you}>you</p>
         <p className={styles.rather}>rather?</p>
       </div>
-      <img className={styles['bg-start']} src="/start.png" />
-      <img className={styles['bg-start-1']} src="/start.png" />
+      <img className={styles['bg-start']} src={getPrefixAsset('/start.png')} />
+      <img className={styles['bg-start-1']} src={getPrefixAsset('/start.png')} />
       <div className={styles['image-wrapper']}>
         {selectedImage?.map(img => (
           <ImageNode
