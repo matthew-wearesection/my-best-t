@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  trailingSlash: true,
+  basePath: '/quiz',
   output: 'export',
 };
 
