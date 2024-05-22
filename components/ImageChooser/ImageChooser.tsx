@@ -14,44 +14,157 @@ export interface IImage {
 
 const images: IImage[] = [
   {
-    id: '1',
-    src: '/quiz/assets/dog.jpeg',
+    id: 'a1-1',
+    src: '/quiz/assets/dog1.jpg',
     alt: 'Image 1',
     children: [
       {
-        id: '5',
-        src: '/quiz/assets/dog2.jpeg',
+        id: 'a2-1',
+        src: '/quiz/assets/dog2.jpg',
         alt: 'Image 1-1',
-        result: 'doglover',
-        children: [],
+        children: [
+          {
+            id: 'a3-1',
+            src: '/quiz/assets/dog3.jpg',
+            alt: 'Image 1-1',
+            children: [
+              {
+                id: 'a4-1',
+                src: '/quiz/assets/dog4.jpg',
+                alt: 'Image 1-1',
+                result: 'doglover',
+                children: [],
+              },
+              {
+                id: 'a4-2',
+                src: '/quiz/assets/cat4.jpg',
+                alt: 'Image 1-2',
+                result: 'same',
+                children: [],
+              },
+            ],
+          },
+          {
+            id: 'a3-2',
+            src: '/quiz/assets/cat3.jpg',
+            alt: 'Image 1-2',
+            children: [
+              {
+                id: 'a4-3',
+                src: '/quiz/assets/dog4.jpg',
+                alt: 'Image 1-1',
+                result: 'doglover',
+                children: [],
+              },
+              {
+                id: 'a4-4',
+                src: '/quiz/assets/cat4.jpg',
+                alt: 'Image 1-2',
+                result: 'catlover',
+                children: [],
+              },
+            ],
+          },
+        ],
       },
       {
-        id: '6',
-        src: '/quiz/assets/cat3.jpeg',
+        id: 'a2-2',
+        src: '/quiz/assets/cat1.jpg',
         alt: 'Image 1-2',
-        result: 'same',
-        children: [],
+        children: [
+          {
+            id: 'a3-4',
+            src: '/quiz/assets/dog3.jpg',
+            alt: 'Image 1-1',
+            children: [
+              {
+                id: 'a4-5',
+                src: '/quiz/assets/dog4.jpg',
+                alt: 'Image 1-1',
+                result: 'doglover',
+                children: [],
+              },
+              {
+                id: 'a4-6',
+                src: '/quiz/assets/cat4.jpg',
+                alt: 'Image 1-2',
+                result: 'same',
+                children: [],
+              },
+            ],
+          },
+          {
+            id: 'a3-5',
+            src: '/quiz/assets/cat3.jpg',
+            alt: 'Image 1-2',
+            result: 'same',
+            children: [
+              {
+                id: 'a4-7',
+                src: '/quiz/assets/dog4.jpg',
+                alt: 'Image 1-1',
+                result: 'catlover',
+                children: [],
+              },
+              {
+                id: 'a4-8',
+                src: '/quiz/assets/cat4.jpg',
+                alt: 'Image 1-2',
+                result: 'same',
+                children: [],
+              },
+            ],
+          },
+        ],
       },
     ],
   },
   {
-    id: '2',
-    src: '/quiz/assets/cat2.jpeg',
+    id: 'b1-1',
+    src: '/quiz/assets/cat2.jpg',
     alt: 'cat',
     children: [
       {
-        id: '5',
-        src: '/quiz/assets/dog.jpeg',
+        id: 'b2-1',
+        src: '/quiz/assets/dog1.jpg',
         alt: 'Image 1-1',
-        result: 'same',
-        children: [],
+        children: [
+          {
+            id: 'b3-1',
+            src: '/quiz/assets/dog2.jpg',
+            alt: 'Image 1-1',
+            result: 'same',
+            children: [],
+          },
+          {
+            id: 'b3-2',
+            src: '/quiz/assets/cat3.jpg',
+            alt: 'Image 1-2',
+            result: 'catlover',
+            children: [],
+          },
+        ],
       },
       {
-        id: '6',
-        src: '/quiz/assets/cat3.jpeg',
+        id: 'b2-2',
+        src: '/quiz/assets/cat3.jpg',
         alt: 'Image 1-2',
-        result: 'catlover',
-        children: [],
+        children: [
+          {
+            id: 'b3-3',
+            src: '/quiz/assets/dog3.jpg',
+            alt: 'Image 1-1',
+            result: 'same',
+            children: [],
+          },
+          {
+            id: 'b3-4',
+            src: '/quiz/assets/cat4.jpg',
+            alt: 'Image 1-2',
+            result: 'catlover',
+            children: [],
+          },
+        ],
       },
     ],
   },

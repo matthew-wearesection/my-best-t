@@ -3,4 +3,23 @@
   align-items: center;
   flex-direction: column;
   gap: 12px;
+  margin-top: 8px;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.button-select {
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  padding: 6px;
+  color: white;
+  background: #1664c0;
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -35,10 +35,10 @@ export default function ResultPage({ params }: { params: { id: string; image: st
   return (
     <div className={styles['congratulation']}>
       <img src={imgSrc} />
-      <h1>Congratulation!</h1>
-      <div>{description}</div>
+      <h3>Congratulation!</h3>
+      <h1>{description}</h1>
 
-      <Share urlShare="google.com" />
+      <Share urlShare={`https://matthew-wearesection.github.io/quiz/result/${params.id}`} />
     </div>
   );
 }
