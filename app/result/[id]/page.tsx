@@ -37,6 +37,7 @@ export default function ResultPage({ params }: { params: { id: string; image: st
       <img src={imgSrc} />
       <h1>Congratulation!</h1>
       <div>{description}</div>
+
       <Share urlShare="google.com" />
     </div>
   );
