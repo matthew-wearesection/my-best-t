@@ -15,19 +15,19 @@ export interface IImage {
 const images: IImage[] = [
   {
     id: '1',
-    src: '/assets/dog.jpeg',
+    src: '/quiz/assets/dog.jpeg',
     alt: 'Image 1',
     children: [
       {
         id: '5',
-        src: '/assets/dog2.jpeg',
+        src: '/quiz/assets/dog2.jpeg',
         alt: 'Image 1-1',
         result: 'doglover',
         children: [],
       },
       {
         id: '6',
-        src: '/assets/cat3.jpeg',
+        src: '/quiz/assets/cat3.jpeg',
         alt: 'Image 1-2',
         result: 'same',
         children: [],
@@ -36,19 +36,19 @@ const images: IImage[] = [
   },
   {
     id: '2',
-    src: '/assets/cat2.jpeg',
+    src: '/quiz/assets/cat2.jpeg',
     alt: 'cat',
     children: [
       {
         id: '5',
-        src: '/assets/dog.jpeg',
+        src: '/quiz/assets/dog.jpeg',
         alt: 'Image 1-1',
         result: 'same',
         children: [],
       },
       {
         id: '6',
-        src: '/assets/cat3.jpeg',
+        src: '/quiz/assets/cat3.jpeg',
         alt: 'Image 1-2',
         result: 'catlover',
         children: [],
@@ -91,8 +91,8 @@ export const ImageChooser = () => {
         <p className={styles.you}>you</p>
         <p className={styles.rather}>rather?</p>
       </div>
-      <img className={styles['bg-start']} src={'/assets/start.png'} />
-      <img className={styles['bg-start-1']} src={'/assets/start.png'} />
+      <img className={styles['bg-start']} src={'/quiz/assets/start.png'} />
+      <img className={styles['bg-start-1']} src={'/quiz/assets/start.png'} />
       <div className={styles['image-wrapper']}>
         {selectedImage?.map(img => (
           <ImageNode

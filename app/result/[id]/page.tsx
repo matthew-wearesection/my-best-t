@@ -5,15 +5,15 @@ import { Metadata } from 'next';
 const config: Record<string, Metadata | any> = {
   doglover: {
     description: 'You are the dog lover',
-    imgSrc: '/assets/dog-result.jpeg',
+    imgSrc: '/quiz/assets/dog-result.jpeg',
   },
   catlover: {
     description: 'You are the cat lover',
-    imgSrc: '/assets/cat-result.jpeg',
+    imgSrc: '/quiz/assets/cat-result.jpeg',
   },
   same: {
     description: 'You are love all',
-    imgSrc: '/assets/dog-cat-result.jpeg',
+    imgSrc: '/quiz/assets/dog-cat-result.jpeg',
   },
 };
 
