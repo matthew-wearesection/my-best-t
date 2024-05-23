@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  basePath: '/quiz',
+  basePath: '/my-best-t',
   output: 'export',
 };
 

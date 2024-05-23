@@ -29,14 +29,14 @@ export const Share: React.FC<{ urlShare: string }> = ({ urlShare }) => {
         <a href={`https://threads.net/intent/post?text=${urlShare}`} target="_blank">
           <img
             style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'fill', background: 'black' }}
-            src="/quiz/assets/threads.svg"
+            src="/my-best-t/assets/threads.svg"
             alt="threads"
           />
         </a>
         <TwitterShareButton title="Show me the x!" url={urlShare}>
           <img
             style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'fill' }}
-            src="/quiz/assets/x.svg"
+            src="/my-best-t/assets/x.svg"
             alt="threads"
           />
         </TwitterShareButton>
