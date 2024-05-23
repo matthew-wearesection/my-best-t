@@ -7,6 +7,9 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'My best "T"',
   description: 'choose my best T',
+  icons: {
+    icon: '/my-best-t/uniqlo.svg',
+  },
 };
 
 export default function RootLayout({
