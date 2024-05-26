@@ -1,3 +1,4 @@
+import { CustomImage } from '@/components/CustomImage/CustomImage';
 import { Share } from '@/components/Share/Share';
 import styles from '@/styles/result.module.scss';
 import { Metadata } from 'next';
@@ -34,9 +35,7 @@ export default function ResultPage({ params }: { params: { id: string; image: st
   const imgSrc = config[params.id].imgSrc;
   return (
     <div className={styles['congratulation']}>
-      <img src={imgSrc} />
-      <h3>Congratulation!</h3>
-      <h1>{description}</h1>
+      <CustomImage src={imgSrc} alt={'congratulation'} />
 
       <Share urlShare={`https://matthew-wearesection.github.io/my-best-t/result/${params.id}`} />
     </div>

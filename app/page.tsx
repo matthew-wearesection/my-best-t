@@ -7,8 +7,8 @@ import styles from './page.module.css';
 export default function Home() {
   const [isStart, setStart] = useState(false);
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       {isStart ? <ImageChooser /> : <StartBanner onStartClick={() => setStart(true)}></StartBanner>}
-    </main>
+    </div>
   );
 }

@@ -22,11 +22,12 @@ export default function RootLayout({
       <body
         style={{
           overflow: 'hidden',
-          width: '100vw',
-          height: '100vh',
-          backgroundColor: '#FF0006',
-          margin: 0,
+          width: '100dvw',
+          height: '100dvh',
+          margin: '0 auto',
           padding: 0,
+          maxWidth: '960px',
+          backgroundColor: 'white',
         }}
       >
         {children}

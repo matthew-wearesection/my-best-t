@@ -4,9 +4,10 @@ import React from 'react';
 import {
   FacebookIcon,
   FacebookShareButton,
+  InstapaperIcon,
+  InstapaperShareButton,
   LinkedinIcon,
   LinkedinShareButton,
-  TwitterIcon,
   TwitterShareButton,
 } from 'react-share';
 import styles from './Share.module.scss';
@@ -18,11 +19,10 @@ export const Share: React.FC<{ urlShare: string }> = ({ urlShare }) => {
   };
   return (
     <div className={styles.container}>
-      <button className={styles['button-select']} onClick={onButtonClick}>
+      {/* <button className={styles['button-select']} onClick={onButtonClick}>
         Make my selection
-      </button>
+      </button> */}
       <div className={styles['social-container']}>
-        <div>share</div>
         <FacebookShareButton title="Show me the facebook!" url={urlShare}>
           <FacebookIcon size={32} round />
         </FacebookShareButton>

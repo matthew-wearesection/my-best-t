@@ -3,6 +3,7 @@
 const nextConfig = {
   basePath: '/my-best-t',
   output: 'export',
+  images: { unoptimized: true },
 };
 
 export default nextConfig;

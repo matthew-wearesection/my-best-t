@@ -3,86 +3,17 @@
   flex-direction: column;
   gap: 24px;
   align-items: center;
-  background-color: #ff0006;
+  background-color: white;
   height: 100%;
   width: 100%;
-}
-
-.text-wrapper {
-  display: flex;
-  gap: 16px;
-  justify-content: space-between;
-  // min-width: 400px;
-  @media (max-width: 768px) {
-    width: 100%;
-    gap: 4px;
-  }
-}
-
-.bg-start {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 10px;
-  right: 20%;
-  @media (max-width: 768px) {
-    right: 0;
-  }
-}
-.bg-start-1 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 10px;
-  left: 20%;
-  @media (max-width: 768px) {
-    left: 0;
-  }
-}
-
-.which,
-.would,
-.you,
-.rather {
-  font-size: 56px;
-  color: black;
-  font-weight: 500;
-  height: 55px;
-  padding: 8px;
-  line-height: 55px;
-
-  @media (max-width: 768px) {
-    font-size: 28px;
-    padding: 4px;
-  }
-}
-
-.which {
-  background-color: #f8e0df;
-  z-index: 1;
-  transform: rotate(-10deg);
-}
-.would {
-  background-color: #e6f9cf;
-  z-index: 2;
-
-  transform: rotate(10deg);
-}
-.you {
-  background-color: #dee1ef;
-  z-index: 3;
-
-  transform: rotate(-10deg);
-}
-.rather {
-  background-color: #dfeeef;
-  z-index: 4;
-
-  transform: rotate(10deg);
+  padding: 20px;
 }
 
 .image-wrapper {
   display: flex;
   flex-wrap: nowrap;
   gap: 15px;
+
+  height: 100%;
+  width: 100%;
 }
