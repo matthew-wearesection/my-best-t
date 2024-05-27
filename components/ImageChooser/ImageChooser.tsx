@@ -14,42 +14,156 @@ export interface IQuestion {
   result?: string;
 }
 
+const firstChildren: IQuestion['children'] = [
+  {
+    id: 'a6-1',
+    src: '/my-best-t/assets/dog4.jpg',
+    alt: 'Image 1-1',
+    description: 'An endless to-do list',
+    result: 'bos-bestie',
+    children: [],
+  },
+  {
+    id: 'a6-2',
+    src: '/my-best-t/assets/dog4.jpg',
+    alt: 'Image 1-1',
+    description: 'A mirror',
+    result: 'vain-pot-bestie',
+    children: [],
+  },
+];
+
+const secondChildren: IQuestion['children'] = [
+  {
+    id: 'a6-3',
+    src: '/my-best-t/assets/cat4.jpg',
+    alt: 'Image 1-2',
+    description: 'Yes',
+    result: 'smart-alec-bestie',
+    children: [],
+  },
+  {
+    id: 'a6-4',
+    src: '/my-best-t/assets/cat4.jpg',
+    alt: 'Image 1-2',
+    description: 'No',
+    result: 'high-maintenance-bestie',
+    children: [],
+  },
+];
+
+const thirdChildren: IQuestion['children'] = [
+  {
+    id: 'a6-1',
+    src: '/my-best-t/assets/dog4.jpg',
+    alt: 'Image 1-1',
+    description: 'Kopi O Ultra Gao',
+    result: 'siao-onz-bestie',
+    children: [],
+  },
+  {
+    id: 'a6-2',
+    src: '/my-best-t/assets/dog4.jpg',
+    alt: 'Image 1-1',
+    description: 'Teh Peng',
+    result: 'sweetheart-bestie',
+    children: [],
+  },
+];
+
+const fourChildren: IQuestion['children'] = [
+  {
+    id: 'a6-1',
+    src: '/my-best-t/assets/dog4.jpg',
+    alt: 'Image 1-1',
+    description: 'With hopes and dreams',
+    result: 'zen-bestie',
+    children: [],
+  },
+  {
+    id: 'a6-2',
+    src: '/my-best-t/assets/dog4.jpg',
+    alt: 'Image 1-1',
+    description: 'With Internship Experience',
+    result: 'plain-water-bestie',
+    children: [],
+  },
+];
+
 const questions: IQuestion = {
   id: 'a1-1',
-  src: '/my-best-t/assets/dog1.jpg',
+  src: '',
   alt: 'Image 1',
-  question: '01-first question ?',
+  question: `01-You and your bestie get stranded on a desert island. What's the first thing you do?`,
   children: [
     {
       id: 'a2-1',
       src: '/my-best-t/assets/dog2.jpg',
       alt: 'Image 1-1',
-      description: 'first dog',
-      question: '02-question 2?',
+      description: 'Make a video',
+      question: `02-You and your bestie can choose
+      one national monument to be
+      featured, which one is it?`,
       children: [
         {
           id: 'a3-1',
           src: '/my-best-t/assets/dog3.jpg',
           alt: 'Image 1-1',
-          question: '03-question 3?',
-          description: 'second dog',
+          question: `03-What's your bestie's spending habits
+          on a day out?`,
+          description: 'The Merlion',
           children: [
             {
               id: 'a4-1',
               src: '/my-best-t/assets/dog4.jpg',
               alt: 'Image 1-1',
-              result: 'doglover',
-              description: 'lovely dog',
-
-              children: [],
+              description: 'Like they O$P$',
+              question: `04-If you were an expressway, which would you be?`,
+              children: [
+                {
+                  id: 'a5-1',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: 'BKE',
+                  question: `05-What is your bestie never seen without?`,
+                  children: firstChildren,
+                },
+                {
+                  id: 'a5-2',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: 'MCE',
+                  question: `05-Would you love your bestie if they were a worm?`,
+                  children: secondChildren,
+                },
+              ],
             },
             {
               id: 'a4-2',
               src: '/my-best-t/assets/cat4.jpg',
               alt: 'Image 1-2',
-              description: 'lovely cat',
-              result: 'same',
-              children: [],
+              description: 'Like a baller',
+              question: `04-What utensil would you be ?`,
+              children: [
+                {
+                  id: 'a5-3',
+                  src: '/my-best-t/assets/cat4.jpg',
+                  alt: 'Image 1-2',
+                  description: 'A Fork',
+                  question: `05-If your bestie could only drink one thing for the
+                  rest of their life, what would it be?`,
+                  children: thirdChildren,
+                },
+                {
+                  id: 'a5-4',
+                  src: '/my-best-t/assets/cat4.jpg',
+                  alt: 'Image 1-2',
+                  description: 'A Spoon',
+                  question: `05-Your bestie is in debt.
+                  How are you paying for lunch?`,
+                  children: fourChildren,
+                },
+              ],
             },
           ],
         },
@@ -57,27 +171,61 @@ const questions: IQuestion = {
           id: 'a3-2',
           src: '/my-best-t/assets/cat3.jpg',
           alt: 'Image 1-2',
-          question: '04-question 3?',
-          description: 'second cat',
-
+          question: `03-What do you and your bestie
+          look at first when you go shopping?`,
+          description: 'MBS',
           children: [
             {
               id: 'a4-3',
               src: '/my-best-t/assets/dog4.jpg',
               alt: 'Image 1-1',
-              result: 'doglover',
-              description: 'lovely dog',
-
-              children: [],
+              description: 'Our bank balance',
+              question: `04-If you were an expressway, which would you be?`,
+              children: [
+                {
+                  id: 'a5-1',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: 'BKE',
+                  question: `05-What is your bestie never seen without?`,
+                  children: firstChildren,
+                },
+                {
+                  id: 'a5-2',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: 'MCE',
+                  question: `05-Would you love your bestie if they were a worm?`,
+                  children: secondChildren,
+                },
+              ],
             },
             {
               id: 'a4-4',
               src: '/my-best-t/assets/cat4.jpg',
               alt: 'Image 1-2',
-              result: 'catlover',
-              description: 'lovely cat',
-
-              children: [],
+              description: 'Each other',
+              question: `04-What utensil would you be ?`,
+              children: [
+                {
+                  id: 'a5-3',
+                  src: '/my-best-t/assets/cat4.jpg',
+                  alt: 'Image 1-2',
+                  description: 'A Fork',
+                  question: `05-If your bestie could only drink one thing for the
+                  rest of their life, what would it be?`,
+                  children: thirdChildren,
+                },
+                {
+                  id: 'a5-4',
+                  src: '/my-best-t/assets/cat4.jpg',
+                  alt: 'Image 1-2',
+                  description: 'A Spoon',
+                  question: `05-Your bestie is in debt.
+                  How are you paying for lunch?`,
+                  children: fourChildren,
+                },
+              ],
             },
           ],
         },
@@ -87,63 +235,131 @@ const questions: IQuestion = {
       id: 'a2-2',
       src: '/my-best-t/assets/cat1.jpg',
       alt: 'Image 1-2',
-      question: '02-where?',
-      description: 'first cat',
-
+      question: `02-How do you and your bestie
+      make decisions?`,
+      description: 'Seek shelter',
       children: [
         {
-          id: 'a3-4',
+          id: 'a3-9',
           src: '/my-best-t/assets/dog3.jpg',
           alt: 'Image 1-1',
-          question: '03-question 3?',
-          description: 'best dog ever',
+          question: '03-What is your bestie reading these days?',
+          description: 'Scissors Paper Stone',
           children: [
             {
-              id: 'a4-5',
+              id: 'a4-9',
               src: '/my-best-t/assets/dog4.jpg',
               alt: 'Image 1-1',
-              result: 'doglover',
-              description: 'best dog ever 1',
-
-              children: [],
+              description: 'Dating profiles',
+              question: `04-What do you listen to your commute?`,
+              children: [
+                {
+                  id: 'a5-9',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: `My mother's nagging`,
+                  question: `05-Your bestie is in debt.
+                  How are you paying for lunch?`,
+                  children: fourChildren,
+                },
+                {
+                  id: 'a5-8',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: `An uncle snoring`,
+                  question: `05-Would you love your bestie if they were a worm?`,
+                  children: secondChildren,
+                },
+              ],
             },
             {
-              id: 'a4-6',
+              id: 'a4-8',
               src: '/my-best-t/assets/cat4.jpg',
               alt: 'Image 1-2',
-              description: 'best dog cat 1',
-
-              result: 'same',
-              children: [],
+              description: 'A Self Help book',
+              question: `04-Would you rather have feet for hands, or hands for feet?`,
+              children: [
+                {
+                  id: 'a5-2',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: 'Feet for hands',
+                  question: `05-If your bestie could only drink one thing for the
+                  rest of their life, what would it be?`,
+                  children: thirdChildren,
+                },
+                {
+                  id: 'a5-8',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: `Hands for feet`,
+                  question: `05-What is your bestie never seen without?`,
+                  children: firstChildren,
+                },
+              ],
             },
           ],
         },
         {
-          id: 'a3-5',
+          id: 'a3-8',
           src: '/my-best-t/assets/cat3.jpg',
           alt: 'Image 1-2',
-          question: '03-question 3?',
-          result: 'same',
-          description: 'best cat ever',
-
+          question: `03-Choose your bestie's alarm`,
+          description: `Say "no, you choose" until
+          someone caves`,
           children: [
             {
               id: 'a4-5',
               src: '/my-best-t/assets/dog4.jpg',
               alt: 'Image 1-1',
-              result: 'doglover',
-              description: 'best dog ever 1',
-
-              children: [],
+              description: `The Karang Guni Uncle's horn`,
+              question: `04-What do you listen to your commute?`,
+              children: [
+                {
+                  id: 'a5-9',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: `My mother's nagging`,
+                  question: `05-Your bestie is in debt.
+                  How are you paying for lunch?`,
+                  children: fourChildren,
+                },
+                {
+                  id: 'a5-8',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: `An uncle snoring`,
+                  question: `05-Would you love your bestie if they were a worm?`,
+                  children: secondChildren,
+                },
+              ],
             },
             {
               id: 'a4-6',
               src: '/my-best-t/assets/cat4.jpg',
-              description: 'best dog cat 1',
-
+              description: `The morning bird that
+              goes "ooo-woo"`,
               alt: 'Image 1-2',
-              result: 'same',
-              children: [],
+              question: `04-Would you rather have feet for hands, or hands for feet?`,
+              children: [
+                {
+                  id: 'a5-2',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: 'Feet for hands',
+                  question: `05-If your bestie could only drink one thing for the
+                  rest of their life, what would it be?`,
+                  children: thirdChildren,
+                },
+                {
+                  id: 'a5-8',
+                  src: '/my-best-t/assets/dog4.jpg',
+                  alt: 'Image 1-1',
+                  description: `Hands for feet`,
+                  question: `05-What is your bestie never seen without?`,
+                  children: firstChildren,
+                },
+              ],
             },
           ],
         },
@@ -177,6 +393,7 @@ export const ImageChooser = () => {
     const node = bfsSearch(questions.children, nodeId);
     setSelectedImage(node);
   };
+  console.log(1, selectedImage);
   const questionNumber = selectedImage?.question?.split('-')?.at(0) || 1;
   const questionString = selectedImage?.question?.split('-')?.at(1) || '';
 
