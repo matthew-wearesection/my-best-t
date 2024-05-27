@@ -395,7 +395,7 @@ export const ImageChooser = () => {
     const node = bfsSearch(questions.children, nodeId);
     setSelectedImage(node);
   };
-  console.log(1, selectedImage);
+  // console.log(1, selectedImage);
   const questionNumber = selectedImage?.question?.split('-')?.at(0) || 1;
   const questionString = selectedImage?.question?.split('-')?.at(1) || '';
 

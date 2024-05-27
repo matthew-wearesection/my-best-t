@@ -8,7 +8,7 @@ type TImageProps = {
 export const CustomImage: React.FC<TImageProps> = ({ src, containerProps, ...restProps }) => {
   return (
     <div {...containerProps} className={`${styles['image-container']} ${containerProps?.className}`}>
-      <Image src={src} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" {...restProps} />
+      <Image src={src} fill sizes="(max-width: 768px) 100vw" {...restProps} />
     </div>
   );
 };
