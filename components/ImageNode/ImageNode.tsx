@@ -17,31 +17,17 @@ const ImageNode: React.FC<ImageNodeProps> = ({ isTransformBackground = true, ima
 
   return (
     <div className={cx(styles.container, { [styles['transform']]: isTransformBackground })} onClick={handleClick}>
-      {isTransformBackground ? (
-        <>
-          <CustomImage
-            containerProps={{ className: styles['image-wrapper'] }}
-            fill={false}
-            width={250}
-            height={250}
-            src={image.src}
-            alt={image.alt}
-          />
-          <div className={styles[`description`]}>{image.description}</div>
-        </>
-      ) : (
-        <>
-          <div className={styles[`description`]}>{image.description}</div>
-          <CustomImage
-            containerProps={{ className: styles['image-wrapper'] }}
-            fill={false}
-            width={250}
-            height={250}
-            src={image.src}
-            alt={image.alt}
-          />
-        </>
-      )}
+      <>
+        <CustomImage
+          containerProps={{ className: styles['image-wrapper'] }}
+          fill={false}
+          width={250}
+          height={250}
+          src={image.src}
+          alt={image.alt}
+        />
+        <div className={styles[`description`]}>{image.description}</div>
+      </>
     </div>
   );
 };
