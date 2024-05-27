@@ -4,40 +4,40 @@ import { Share } from '@/components/Share/Share';
 import styles from '@/styles/result.module.scss';
 import { Metadata } from 'next';
 
-const basePath = '/my-best-t';
+const basePath = '/my-best-t/assets/result';
 
 const config: Record<string, Metadata | any> = {
   'bos-bestie': {
     description: 'Bos$-y Bestie',
-    imgSrc: `${basePath}/assets/dog-result.jpeg`,
+    imgSrc: `${basePath}/bos-bestie.png`,
   },
   'vain-pot-bestie': {
     description: 'Vain Pot Bestie',
-    imgSrc: `${basePath}/assets/cat-result.jpeg`,
+    imgSrc: `${basePath}/vain-pot.png`,
   },
   'smart-alec-bestie': {
     description: 'Smart Alec Bestie',
-    imgSrc: `${basePath}/assets/dog-cat-result.jpeg`,
+    imgSrc: `${basePath}/smart-alec.png`,
   },
   'high-maintenance-bestie': {
     description: 'High Maintenance Bestie',
-    imgSrc: `${basePath}/assets/dog-cat-result.jpeg`,
+    imgSrc: `${basePath}/high.png`,
   },
   'siao-onz-bestie': {
     description: 'Siao Onz Bestie',
-    imgSrc: `${basePath}/assets/dog-cat-result.jpeg`,
+    imgSrc: `${basePath}/siao-onz.png`,
   },
   'sweetheart-bestie': {
     description: 'Sweetheart Bestie',
-    imgSrc: `${basePath}/assets/dog-cat-result.jpeg`,
+    imgSrc: `${basePath}/sweetheart.png`,
   },
   'zen-bestie': {
     description: 'Zen Bestie',
-    imgSrc: `${basePath}/assets/dog-cat-result.jpeg`,
+    imgSrc: `${basePath}/zen.png`,
   },
   'plain-water-bestie': {
     description: 'Plain Water Bestie',
-    imgSrc: `${basePath}/assets/dog-cat-result.jpeg`,
+    imgSrc: `${basePath}/plain.png`,
   },
 };
 
@@ -68,7 +68,7 @@ export default function ResultPage({ params }: { params: { id: string; image: st
 
   return (
     <div className={styles['congratulation']}>
-      <CustomImage src={imgSrc} alt={'congratulation'} />
+      <CustomImage style={{ objectFit: 'contain' }} src={imgSrc} alt={'congratulation'} />
       <DownloadImg urlImg={imgSrc} imageName={basePath} />
       <Share urlShare={`https://matthew-wearesection.github.io/my-best-t/result/${params.id}`} />
     </div>

@@ -14,10 +14,12 @@ export interface IQuestion {
   result?: string;
 }
 
+const baseImg = '/my-best-t/assets/imagesTreeChoose';
+
 const firstChildren: IQuestion['children'] = [
   {
     id: 'a6-1',
-    src: '/my-best-t/assets/dog4.jpg',
+    src: `${baseImg}/endless-todo-list.jpg`,
     alt: 'Image 1-1',
     description: 'An endless to-do list',
     result: 'bos-bestie',
@@ -25,7 +27,7 @@ const firstChildren: IQuestion['children'] = [
   },
   {
     id: 'a6-2',
-    src: '/my-best-t/assets/dog4.jpg',
+    src: `${baseImg}/a-mirror.jpg`,
     alt: 'Image 1-1',
     description: 'A mirror',
     result: 'vain-pot-bestie',
@@ -36,7 +38,7 @@ const firstChildren: IQuestion['children'] = [
 const secondChildren: IQuestion['children'] = [
   {
     id: 'a6-3',
-    src: '/my-best-t/assets/cat4.jpg',
+    src: `${baseImg}/yes.jpg`,
     alt: 'Image 1-2',
     description: 'Yes',
     result: 'smart-alec-bestie',
@@ -44,7 +46,7 @@ const secondChildren: IQuestion['children'] = [
   },
   {
     id: 'a6-4',
-    src: '/my-best-t/assets/cat4.jpg',
+    src: `${baseImg}/no.jpg`,
     alt: 'Image 1-2',
     description: 'No',
     result: 'high-maintenance-bestie',
@@ -55,7 +57,7 @@ const secondChildren: IQuestion['children'] = [
 const thirdChildren: IQuestion['children'] = [
   {
     id: 'a6-1',
-    src: '/my-best-t/assets/dog4.jpg',
+    src: `${baseImg}/kopi-o-ultra-gao.jpg`,
     alt: 'Image 1-1',
     description: 'Kopi O Ultra Gao',
     result: 'siao-onz-bestie',
@@ -63,7 +65,7 @@ const thirdChildren: IQuestion['children'] = [
   },
   {
     id: 'a6-2',
-    src: '/my-best-t/assets/dog4.jpg',
+    src: `${baseImg}/tehpeng.jpg`,
     alt: 'Image 1-1',
     description: 'Teh Peng',
     result: 'sweetheart-bestie',
@@ -74,7 +76,7 @@ const thirdChildren: IQuestion['children'] = [
 const fourChildren: IQuestion['children'] = [
   {
     id: 'a6-1',
-    src: '/my-best-t/assets/dog4.jpg',
+    src: `${baseImg}/with-hope-and-dream.jpg`,
     alt: 'Image 1-1',
     description: 'With hopes and dreams',
     result: 'zen-bestie',
@@ -82,7 +84,7 @@ const fourChildren: IQuestion['children'] = [
   },
   {
     id: 'a6-2',
-    src: '/my-best-t/assets/dog4.jpg',
+    src: `${baseImg}/with-exp.jpg`,
     alt: 'Image 1-1',
     description: 'With Internship Experience',
     result: 'plain-water-bestie',
@@ -98,7 +100,7 @@ const questions: IQuestion = {
   children: [
     {
       id: 'a2-1',
-      src: '/my-best-t/assets/dog2.jpg',
+      src: `${baseImg}/make-a-video.jpg`,
       alt: 'Image 1-1',
       description: 'Make a video',
       question: `02-You and your bestie can choose
@@ -107,7 +109,7 @@ const questions: IQuestion = {
       children: [
         {
           id: 'a3-1',
-          src: '/my-best-t/assets/dog3.jpg',
+          src: `${baseImg}/the-merlion.jpg`,
           alt: 'Image 1-1',
           question: `03-What's your bestie's spending habits
           on a day out?`,
@@ -115,14 +117,14 @@ const questions: IQuestion = {
           children: [
             {
               id: 'a4-1',
-              src: '/my-best-t/assets/dog4.jpg',
+              src: `${baseImg}/like-they.jpg`,
               alt: 'Image 1-1',
               description: 'Like they O$P$',
               question: `04-If you were an expressway, which would you be?`,
               children: [
                 {
                   id: 'a5-1',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/bke.jpg`,
                   alt: 'Image 1-1',
                   description: 'BKE',
                   question: `05-What is your bestie never seen without?`,
@@ -130,7 +132,7 @@ const questions: IQuestion = {
                 },
                 {
                   id: 'a5-2',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/mce.jpg`,
                   alt: 'Image 1-1',
                   description: 'MCE',
                   question: `05-Would you love your bestie if they were a worm?`,
@@ -140,14 +142,14 @@ const questions: IQuestion = {
             },
             {
               id: 'a4-2',
-              src: '/my-best-t/assets/cat4.jpg',
+              src: `${baseImg}/like-a-baller.jpg`,
               alt: 'Image 1-2',
               description: 'Like a baller',
               question: `04-What utensil would you be ?`,
               children: [
                 {
                   id: 'a5-3',
-                  src: '/my-best-t/assets/cat4.jpg',
+                  src: `${baseImg}/a-fork.jpg`,
                   alt: 'Image 1-2',
                   description: 'A Fork',
                   question: `05-If your bestie could only drink one thing for the
@@ -156,7 +158,7 @@ const questions: IQuestion = {
                 },
                 {
                   id: 'a5-4',
-                  src: '/my-best-t/assets/cat4.jpg',
+                  src: `${baseImg}/a-spoon.jpg`,
                   alt: 'Image 1-2',
                   description: 'A Spoon',
                   question: `05-Your bestie is in debt.
@@ -169,7 +171,7 @@ const questions: IQuestion = {
         },
         {
           id: 'a3-2',
-          src: '/my-best-t/assets/cat3.jpg',
+          src: `${baseImg}/mbs.jpg`,
           alt: 'Image 1-2',
           question: `03-What do you and your bestie
           look at first when you go shopping?`,
@@ -177,14 +179,14 @@ const questions: IQuestion = {
           children: [
             {
               id: 'a4-3',
-              src: '/my-best-t/assets/dog4.jpg',
+              src: `${baseImg}/our-bank-balance.jpg`,
               alt: 'Image 1-1',
               description: 'Our bank balance',
               question: `04-If you were an expressway, which would you be?`,
               children: [
                 {
                   id: 'a5-1',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/bke.jpg`,
                   alt: 'Image 1-1',
                   description: 'BKE',
                   question: `05-What is your bestie never seen without?`,
@@ -192,7 +194,7 @@ const questions: IQuestion = {
                 },
                 {
                   id: 'a5-2',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/mce.jpg`,
                   alt: 'Image 1-1',
                   description: 'MCE',
                   question: `05-Would you love your bestie if they were a worm?`,
@@ -202,14 +204,14 @@ const questions: IQuestion = {
             },
             {
               id: 'a4-4',
-              src: '/my-best-t/assets/cat4.jpg',
+              src: `${baseImg}/each-other.jpg`,
               alt: 'Image 1-2',
               description: 'Each other',
               question: `04-What utensil would you be ?`,
               children: [
                 {
                   id: 'a5-3',
-                  src: '/my-best-t/assets/cat4.jpg',
+                  src: `${baseImg}/a-fork.jpg`,
                   alt: 'Image 1-2',
                   description: 'A Fork',
                   question: `05-If your bestie could only drink one thing for the
@@ -218,7 +220,7 @@ const questions: IQuestion = {
                 },
                 {
                   id: 'a5-4',
-                  src: '/my-best-t/assets/cat4.jpg',
+                  src: `${baseImg}/a-spoon.jpg`,
                   alt: 'Image 1-2',
                   description: 'A Spoon',
                   question: `05-Your bestie is in debt.
@@ -233,7 +235,7 @@ const questions: IQuestion = {
     },
     {
       id: 'a2-2',
-      src: '/my-best-t/assets/cat1.jpg',
+      src: `${baseImg}/seek-shelter.jpg`,
       alt: 'Image 1-2',
       question: `02-How do you and your bestie
       make decisions?`,
@@ -241,21 +243,21 @@ const questions: IQuestion = {
       children: [
         {
           id: 'a3-9',
-          src: '/my-best-t/assets/dog3.jpg',
+          src: `${baseImg}/scissors-paper-stone.jpg`,
           alt: 'Image 1-1',
           question: '03-What is your bestie reading these days?',
           description: 'Scissors Paper Stone',
           children: [
             {
               id: 'a4-9',
-              src: '/my-best-t/assets/dog4.jpg',
+              src: `${baseImg}/dating-profile.jpg`,
               alt: 'Image 1-1',
               description: 'Dating profiles',
               question: `04-What do you listen to your commute?`,
               children: [
                 {
                   id: 'a5-9',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/the-mother-nagging.jpg`,
                   alt: 'Image 1-1',
                   description: `My mother's nagging`,
                   question: `05-Your bestie is in debt.
@@ -264,7 +266,7 @@ const questions: IQuestion = {
                 },
                 {
                   id: 'a5-8',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/an-uncle-snoring.jpg`,
                   alt: 'Image 1-1',
                   description: `An uncle snoring`,
                   question: `05-Would you love your bestie if they were a worm?`,
@@ -274,14 +276,14 @@ const questions: IQuestion = {
             },
             {
               id: 'a4-8',
-              src: '/my-best-t/assets/cat4.jpg',
+              src: `${baseImg}/a-self-help-book.jpg`,
               alt: 'Image 1-2',
               description: 'A Self Help book',
               question: `04-Would you rather have feet for hands, or hands for feet?`,
               children: [
                 {
                   id: 'a5-2',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/feet-for-hand.jpg`,
                   alt: 'Image 1-1',
                   description: 'Feet for hands',
                   question: `05-If your bestie could only drink one thing for the
@@ -290,7 +292,7 @@ const questions: IQuestion = {
                 },
                 {
                   id: 'a5-8',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/hand-for-feet.jpg`,
                   alt: 'Image 1-1',
                   description: `Hands for feet`,
                   question: `05-What is your bestie never seen without?`,
@@ -302,7 +304,7 @@ const questions: IQuestion = {
         },
         {
           id: 'a3-8',
-          src: '/my-best-t/assets/cat3.jpg',
+          src: `${baseImg}/no-you-choose.jpg`,
           alt: 'Image 1-2',
           question: `03-Choose your bestie's alarm`,
           description: `Say "no, you choose" until
@@ -310,14 +312,14 @@ const questions: IQuestion = {
           children: [
             {
               id: 'a4-5',
-              src: '/my-best-t/assets/dog4.jpg',
+              src: `${baseImg}/the-karang-guni.jpg`,
               alt: 'Image 1-1',
               description: `The Karang Guni Uncle's horn`,
               question: `04-What do you listen to your commute?`,
               children: [
                 {
                   id: 'a5-9',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/the-mother-nagging.jpg`,
                   alt: 'Image 1-1',
                   description: `My mother's nagging`,
                   question: `05-Your bestie is in debt.
@@ -326,7 +328,7 @@ const questions: IQuestion = {
                 },
                 {
                   id: 'a5-8',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/an-uncle-snoring.jpg`,
                   alt: 'Image 1-1',
                   description: `An uncle snoring`,
                   question: `05-Would you love your bestie if they were a worm?`,
@@ -336,7 +338,7 @@ const questions: IQuestion = {
             },
             {
               id: 'a4-6',
-              src: '/my-best-t/assets/cat4.jpg',
+              src: `${baseImg}/the-morning-bird.jpg`,
               description: `The morning bird that
               goes "ooo-woo"`,
               alt: 'Image 1-2',
@@ -344,7 +346,7 @@ const questions: IQuestion = {
               children: [
                 {
                   id: 'a5-2',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/feet-for-hand.jpg`,
                   alt: 'Image 1-1',
                   description: 'Feet for hands',
                   question: `05-If your bestie could only drink one thing for the
@@ -353,7 +355,7 @@ const questions: IQuestion = {
                 },
                 {
                   id: 'a5-8',
-                  src: '/my-best-t/assets/dog4.jpg',
+                  src: `${baseImg}/hand-for-feet.jpg`,
                   alt: 'Image 1-1',
                   description: `Hands for feet`,
                   question: `05-What is your bestie never seen without?`,
