@@ -10,34 +10,75 @@ const config: Record<string, Metadata | any> = {
   'bos-bestie': {
     description: 'Bos$-y Bestie',
     imgSrc: `${basePath}/bos-bestie.png`,
+    openGraph: {
+      title: 'Bos$-y Bestie',
+      description: 'Bos$-y Bestie my best "T"',
+      images: [`${basePath}/bos-bestie.png`],
+    },
   },
   'vain-pot-bestie': {
     description: 'Vain Pot Bestie',
     imgSrc: `${basePath}/vain-pot.png`,
+    openGraph: {
+      title: 'Vain Pot Bestie',
+      description: 'Vain Pot Bestie my best "T"',
+      images: [`${basePath}/vain-pot.png`],
+    },
   },
   'smart-alec-bestie': {
     description: 'Smart Alec Bestie',
     imgSrc: `${basePath}/smart-alec.png`,
+    openGraph: {
+      title: 'Smart Alec Bestie',
+      description: 'Smart Alec Bestie my best "T"',
+      images: [`${basePath}/smart-alec.png`],
+    },
   },
   'high-maintenance-bestie': {
     description: 'High Maintenance Bestie',
     imgSrc: `${basePath}/high.png`,
+
+    openGraph: {
+      title: 'High Maintenance Bestie',
+      description: 'High Maintenance Bestie my best "T"',
+      images: [`${basePath}/high.png`],
+    },
   },
   'siao-onz-bestie': {
     description: 'Siao Onz Bestie',
     imgSrc: `${basePath}/siao-onz.png`,
+    openGraph: {
+      title: 'Siao Onz Bestie',
+      description: 'Siao Onz Bestie my best "T"',
+      images: [`${basePath}/siao-onz.png`],
+    },
   },
   'sweetheart-bestie': {
     description: 'Sweetheart Bestie',
     imgSrc: `${basePath}/sweetheart.png`,
+    openGraph: {
+      title: 'Sweetheart Bestie',
+      description: 'Sweetheart Bestie my best "T"',
+      images: [`${basePath}/sweetheart.png`],
+    },
   },
   'zen-bestie': {
     description: 'Zen Bestie',
     imgSrc: `${basePath}/zen.png`,
+    openGraph: {
+      title: 'Zen Bestie',
+      description: 'Zen Bestie my best "T"',
+      images: [`${basePath}/zen.png`],
+    },
   },
   'plain-water-bestie': {
     description: 'Plain Water Bestie',
     imgSrc: `${basePath}/plain.png`,
+    openGraph: {
+      title: 'Plain Water Bestie',
+      description: 'Plain Water Bestie my best "T"',
+      images: [`${basePath}/plain.png`],
+    },
   },
 };
 
